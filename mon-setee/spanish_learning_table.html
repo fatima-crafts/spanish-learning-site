@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>تعلم اللغة الإسبانية</title>
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #ffe6f0;
+      padding: 20px;
+      direction: rtl;
+    }
+    h1 {
+      text-align: center;
+      color: #c2185b;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 30px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #f8bbd0;
+      color: #880e4f;
+    }
+    .audio-btn {
+      background-color: #f06292;
+      color: white;
+      border: none;
+      padding: 6px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .audio-btn:hover {
+      background-color: #e91e63;
+    }
+  </style>
+</head>
+<body>
+  <h1>اللغة الإسبانية</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>الكلمة</th>
+        <th>النطق بالحروف</th>
+        <th>استمع</th>
+        <th>الجملة</th>
+        <th>ترجمة الكلمة</th>
+        <th>ترجمة الجملة</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Hola</td>
+        <td>أو-لا</td>
+        <td>
+          <button class="audio-btn" onclick="document.getElementById('holaAudio').play()">🔊</button>
+          <audio id="holaAudio">
+            <source src="media/hola.mp3" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>Hola, ¿cómo estás?</td>
+        <td>مرحبًا</td>
+        <td>مرحبًا، كيف حالك؟</td>
+      </tr>
+	  <tr>
+	    <td>Jugo</td>
+	    <td>خو-قو</td>
+	    <td>
+	      <button class="audio-btn" onclick="document.getElementById('jugoAudio').play()">🔊</button>
+	      <audio id="jugoAudio">
+            <source src="media/jugo.mp3" type="audio/mpeg">
+          </audio>
+		</td>
+		<td>Quiero un jugo de naranja</td>
+		<td>عصير</td>
+		<td>أريد عصير برتقال</td>
+      </tr>
+  </table>
+</body>
+</html>
